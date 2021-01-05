@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="contact.css"/>
+        <script src='contact.js'></script>
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+       
+    </head>
+    <body>
+
+
+
+        <section id="mainSection">
+            <div id="mainContent">
+                <span id="pageLabel">Contact Me</span>
+                <h1 class="animate__animated animate__fadeInRight animate__delay-1s">Lets Get Started</h1>
+                <p class="animate__animated animate__fadeInLeft animate__delay-1s">Contact me so we can get to the next level together.</p>
+                <div id="redBar" class="animate__animated animate__bounceInDown animate__delay-1s"></div>
+                <div id="inputWrapper" class="animate__animated animate__rollIn animate__delay-1s">
+                    <input type="text" placeholder="First Name" id="firstName" class="inputField"/><!--
+                ---><input type="text" placeholder="Last Name" id="lastName" class="inputField"/>
+                    <input tpye="text" placeholder="Email" class="fullInputField"/>
+                    <input tpye="text" placeholder="Phone Number" class="fullInputField"/>
+                    <br /><br /><br /><br />
+                    <h3>How Can I Help?</h3>
+                    <textarea placeholder="Your Message..." class="fullInputField"></textarea>
+                    <button id="contactButton">SEND</button>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footerContent">
+                    <span id="footerNavigation">
+                        <div id="footerNavigationSpanWrapper">
+                            <a href="../index.html"><span>Home</span></a>
+                            <a href="../about/about.html"><span>About</span></a>
+                            <a href="../index.html#portfolio"><span>Portfolio</span></a>
+                            <a href="contact.html"><span>Contact</span></a>
+                        </div>
+                    </span>
+                    <span id="footerSocialIcons">
+                        <svg class="socialIcon" width="28.92" height="54" viewBox="0 0 28.92 54">
+                            <path d="M28.634,30.375l1.5-9.773H20.757V14.26c0-2.674,1.31-5.28,5.509-5.28h4.263V.66A51.981,51.981,0,0,0,22.962,0C15.241,0,10.193,4.681,10.193,13.154V20.6H1.609v9.773h8.584V54H20.757V30.375Z" transform="translate(-1.609)" fill="#888"/>
+                        </svg>
+                        <svg class="socialIcon" width="47.25" height="47.25" viewBox="0 0 47.25 47.25">
+                            <path d="M10.576,47.251H.78V15.7h9.8ZM5.673,11.4a5.7,5.7,0,1,1,5.673-5.727A5.721,5.721,0,0,1,5.673,11.4Zm41.566,35.85H37.465V31.894c0-3.66-.074-8.353-5.093-8.353-5.093,0-5.874,3.976-5.874,8.09v15.62H16.713V15.7h9.4v4.3h.137a10.293,10.293,0,0,1,9.269-5.094c9.914,0,11.737,6.529,11.737,15.009V47.251Z" transform="translate(0 -0.001)" fill="#888"/>
+                        </svg>
+                        <svg class="socialIcon" width="52.32" height="52.32" viewBox="0 0 52.32 52.32">
+                            <path d="M26.722.563a26.16,26.16,0,1,0,26.16,26.16A26.19,26.19,0,0,0,26.722.563Zm17.3,12.064a22.238,22.238,0,0,1,5.046,13.919,52.218,52.218,0,0,0-15.559-.719c-.607-1.481-1.179-2.784-1.964-4.39C39.8,18.064,43.548,13.263,44.019,12.626Zm-2.484-2.584c-.4.572-3.765,5.093-11.711,8.072A119.271,119.271,0,0,0,21.486,5.033a22.287,22.287,0,0,1,20.048,5.009ZM17.223,6.535a142.574,142.574,0,0,1,8.284,12.923A83.345,83.345,0,0,1,4.85,22.18,22.426,22.426,0,0,1,17.223,6.535ZM4.378,26.757c0-.228,0-.456.011-.683a82.425,82.425,0,0,0,22.964-3.18c.64,1.252,1.251,2.523,1.812,3.792C21.085,28.962,13.744,35.5,10.122,41.7A22.255,22.255,0,0,1,4.378,26.757Zm8.629,17.628c2.334-4.771,8.668-10.93,17.677-14a92.88,92.88,0,0,1,4.767,16.945,22.3,22.3,0,0,1-22.444-2.941Zm26.2.9a96.441,96.441,0,0,0-4.341-15.932,32.8,32.8,0,0,1,13.918.955A22.384,22.384,0,0,1,39.207,45.28Z" transform="translate(-0.563 -0.563)" fill="#888"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <div id="menuTogglerWrapper" onclick="openMainNavigation()" class="animate__animated animate__bounceInDown">
+            <svg  id="menuToggler" width="95" height="35" viewBox="0 0 95 35">
+              <rect x="60" y="0" width="35" height="5" fill="black"/>
+              <rect x="60" y="15" width="35" height="5" fill="black"/>
+              <rect x="60" y="30" width="35" height="5" fill="black"/> 
+            </svg>
+        </div>
+
+        <div id="mainNavigationWrapper">
+            <div id="mainNavigationContent">
+                <div class="mainNavigationColumn">
+                    <div class="mainNavigationCentered">
+                        <img src="../images/codeLogo.png" id="codeLogo"/>
+                    </div>
+                </div><!--
+            ---><div class="mainNavigationColumn">
+                    <div class="mainNavigationCentered">
+                        <div id="singleNavItemWrapper">
+                            <a href="../index.html" onclick="closeMainNavigation()"><h2 class="singleNavItem">Home</h2></a>
+                            <a href="../about/about.html" onclick="closeMainNavigation()"><h2 class="singleNavItem">About</h2></a>
+                            <a href="../index.html#portfolio" onclick="closeMainNavigation()"><h2 class="singleNavItem">Portfolio</h2></a>
+                            <a href="contact.html" onclick="closeMainNavigation()"><h2 class="singleNavItem">Contact</h2></a>
+                        
+                            <span id="socialIconsWrapper">
+                                <svg class="mainSocialIcon" width="28.92" height="54" viewBox="0 0 28.92 54">
+                                    <path d="M28.634,30.375l1.5-9.773H20.757V14.26c0-2.674,1.31-5.28,5.509-5.28h4.263V.66A51.981,51.981,0,0,0,22.962,0C15.241,0,10.193,4.681,10.193,13.154V20.6H1.609v9.773h8.584V54H20.757V30.375Z" transform="translate(-1.609)" fill="#888"/>
+                                </svg>
+                                <svg class="mainSocialIcon" width="47.25" height="47.25" viewBox="0 0 47.25 47.25">
+                                    <path d="M10.576,47.251H.78V15.7h9.8ZM5.673,11.4a5.7,5.7,0,1,1,5.673-5.727A5.721,5.721,0,0,1,5.673,11.4Zm41.566,35.85H37.465V31.894c0-3.66-.074-8.353-5.093-8.353-5.093,0-5.874,3.976-5.874,8.09v15.62H16.713V15.7h9.4v4.3h.137a10.293,10.293,0,0,1,9.269-5.094c9.914,0,11.737,6.529,11.737,15.009V47.251Z" transform="translate(0 -0.001)" fill="#888"/>
+                                </svg>
+                                <svg class="mainSocialIcon" width="52.32" height="52.32" viewBox="0 0 52.32 52.32">
+                                    <path d="M26.722.563a26.16,26.16,0,1,0,26.16,26.16A26.19,26.19,0,0,0,26.722.563Zm17.3,12.064a22.238,22.238,0,0,1,5.046,13.919,52.218,52.218,0,0,0-15.559-.719c-.607-1.481-1.179-2.784-1.964-4.39C39.8,18.064,43.548,13.263,44.019,12.626Zm-2.484-2.584c-.4.572-3.765,5.093-11.711,8.072A119.271,119.271,0,0,0,21.486,5.033a22.287,22.287,0,0,1,20.048,5.009ZM17.223,6.535a142.574,142.574,0,0,1,8.284,12.923A83.345,83.345,0,0,1,4.85,22.18,22.426,22.426,0,0,1,17.223,6.535ZM4.378,26.757c0-.228,0-.456.011-.683a82.425,82.425,0,0,0,22.964-3.18c.64,1.252,1.251,2.523,1.812,3.792C21.085,28.962,13.744,35.5,10.122,41.7A22.255,22.255,0,0,1,4.378,26.757Zm8.629,17.628c2.334-4.771,8.668-10.93,17.677-14a92.88,92.88,0,0,1,4.767,16.945,22.3,22.3,0,0,1-22.444-2.941Zm26.2.9a96.441,96.441,0,0,0-4.341-15.932,32.8,32.8,0,0,1,13.918.955A22.384,22.384,0,0,1,39.207,45.28Z" transform="translate(-0.563 -0.563)" fill="#888"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg id="exitIcon" width="35" height="35" viewBox="0 0 35 35" onclick="closeMainNavigation()">
+                <path d="M37.252,30.046h0L26.633,19.428,37.251,8.81h0a1.1,1.1,0,0,0,0-1.546L32.235,2.248a1.1,1.1,0,0,0-1.546,0h0L20.071,12.866,9.453,2.248h0a1.1,1.1,0,0,0-1.546,0L2.89,7.263a1.1,1.1,0,0,0,0,1.546h0L13.508,19.428,2.89,30.046h0a1.1,1.1,0,0,0,0,1.546l5.016,5.016a1.1,1.1,0,0,0,1.546,0h0L20.071,25.991,30.689,36.609h0a1.1,1.1,0,0,0,1.546,0l5.016-5.016a1.1,1.1,0,0,0,0-1.546Z" transform="translate(-2.571 -1.928)" fill="#fff"/>
+            </svg>
+        </div>
+        
+    </body>
+</html>

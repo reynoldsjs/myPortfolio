@@ -1,0 +1,484 @@
+body {
+    overflow-x:hidden;
+}
+
+#mainSection {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    min-height:100vh;
+    font-family:raleway;
+}
+
+#mainContent {
+    position:relative;
+    width:100%;
+    text-align:center;
+    min-height:calc(100vh - 200px);
+}
+
+h1 {
+    font-family:raleway;
+    font-size:5vw;
+    text-transform:uppercase;
+}
+
+p {
+    margin:0px 0px 20px 0px;
+    padding:0px;
+    font-size: 2vw;
+    width:40%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#redBar {
+    width:15%;
+    height:8px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:50px;
+    background-color:var(--red);
+}
+
+#inputWrapper {
+    position:relative;
+    width:50%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#firstName {
+    width:calc(50% - 20px);
+    margin-right:10px;
+}
+
+#lastName {
+    width:calc(50% - 20px);
+    margin-left:10px;
+}
+
+.inputField {
+    font-size:25px;
+    font-family: raleway;
+    text-align:center;
+    margin:10px 0px;
+    border-radius:4px;
+    padding:10px 0px;
+    border:1px solid #707070;
+}
+
+.fullInputField {
+    width:calc(100% - 10px);
+    font-size:25px;
+    font-family: raleway;
+    text-align:center;
+    margin:10px 0px;
+    border-radius:4px;
+    padding:10px 0px;
+    border:1px solid #707070;
+}
+
+h3 {
+    font-size:25px;
+    margin:0px;
+}
+
+textarea {
+    text-align:center;
+    height:100px;
+    border-radius:10px;
+    padding:10px 0px;
+    border:1px solid #707070;
+}
+
+button {
+    width:calc(100% - 10px);
+    font-size:30px;
+    font-family: raleway;
+    background-color:var(--red);
+    border:none;
+    color:white;
+    border-radius:10px;
+    padding:30px 0px;
+    background-image: linear-gradient(90deg, var(--red) 0%, var(--red) 50%, var(--redHover) 50%, var(--redHover) 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+}
+
+button:hover {
+    cursor: pointer;
+    background-position: -100% 100%;
+}
+
+@media screen and (max-width:800px){
+    #pageLabel {
+        font-size:4vw;
+    }
+    
+    h1 {
+        font-size:8vw;
+    }
+    
+    p {
+        font-size: 4vw;
+        width:70%;
+    }
+
+
+    #redBar {
+        width:25%;
+    }
+    
+    #inputWrapper {
+        width:70%;
+    }
+
+    #firstName {
+        width:calc(50% - 10px);
+        margin-right:5px;
+    }
+    
+    #lastName {
+        width:calc(50% - 10px);
+        margin-left:5px;
+    }
+    
+    .inputField {
+        font-size:18px;
+    }
+    
+    .fullInputField {
+        font-size:18px;
+    }
+    
+    h3 {
+        font-size:18px;
+        margin:0px;
+    }
+    
+    textarea {
+        height:50px;
+        padding:5px 0px;
+    }
+    
+    button {
+        font-size:20px;
+        padding:10px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --red:#EF0D33;
+    --redHover:#AE0925;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../Raleway-ExtraBold.woff);
+}
+
+
+#mainNavigationWrapper {
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background-color:#000000;
+    font-family:raleway;
+}
+
+#exitIcon {
+    position:absolute;
+    top:25px;
+    right:25px;
+}
+
+#exitIcon:hover > path {
+    fill:var(--red)
+}
+
+#mainNavigationContent {
+    position: absolute;
+    width:100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mainNavigationColumn {
+    position:relative;
+    display:inline-block;
+    width:50%;
+}
+
+.mainNavigationCentered {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width:100%;
+    text-align:center;
+}
+
+
+#codeLogo {
+    width:50%;
+}
+
+#singleNavItemWrapper {
+    display:inline-block;
+    text-align:left;
+    width:auto;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.singleNavItem {
+    color:white;
+    text-transform: uppercase;
+    font-size:4vw;
+    margin:20px 0px;
+}
+
+.singleNavItem:hover {
+    color:var(--red);
+}
+
+#socialIconsWrapper {
+    display:block;
+    margin-top:100px;
+}
+
+.mainSocialIcon {
+    margin:0px 4vw 0px 0px;
+}
+
+.mainSocialIcon:hover > path {
+    fill:var(--red);
+}
+
+#footer {
+    position:relative;
+    width:100%;
+    height:200px;
+    background-color:#15191C;
+    }
+
+    #footerContent {
+    position: absolute;
+    width:100%;
+    height:auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    #footerNavigation {
+    display:inline-block;
+    vertical-align:top;
+    width:60%;
+    text-align: center;
+    }
+
+    #footerNavigationSpanWrapper {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    #footerNavigationSpanWrapper span{
+    text-transform: uppercase;
+    color:white;
+    margin:0px 3vw;
+    font-size:2vw;
+    font-weight:700;
+    font-family:raleway;
+    }
+
+    #footerNavigation span:hover{
+    color:var(--redHover)
+    }
+
+    #footerSocialIcons {
+    display:inline-block;
+    vertical-align:top;
+    width:30%;
+    text-align:center;
+    }
+
+    .socialIcon {
+    margin:0px 2vw;
+    }
+
+    .socialIcon:hover > path {
+    fill:var(--redHover);
+    }
+
+/* menu hover animation start */
+#menuTogglerWrapper {
+    position:fixed;
+    right:10px;
+    top:10px;
+    
+}
+
+#menuTogglerWrapper:hover > svg {
+    animation:menuSvg .5s ease;
+}
+
+#menuTogglerWrapper:hover > svg > rect:first-child {
+    fill:var(--redHover);
+    animation:menuRect .5s ease;
+}
+
+#menuTogglerWrapper:hover > svg > rect:nth-of-type(2) {
+    fill:var(--redHover);
+    animation:menuRectOpposite .5s ease;
+    animation-delay: .2s;
+}
+
+#menuTogglerWrapper:hover > svg > rect:nth-of-type(3) {
+    fill:var(--redHover);
+    animation:menuRect .5s ease;
+    animation-delay: .1s;
+}
+
+@keyframes menuSvg {
+    from {
+    transform:rotate(0deg);
+    }
+    to {
+    transform:rotate(-360deg);
+    }
+}
+
+@keyframes menuRect {
+    0% {
+    transform:translate(0px)
+    }
+    50% {
+    transform:translate(-30px)
+    }
+    100% {
+    transform:translate(0px)
+    }
+}
+
+@keyframes menuRectOpposite {
+    0% {
+    transform:translate(0px)
+    }
+    50% {
+    transform:translate(30px)
+    }
+    100% {
+    transform:translate(0px)
+    }
+}
+
+/* menu hover animation end */
+
+@media screen and (max-width:800px){
+    #footerContent {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    #footerNavigation {
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    
+    #footerNavigationSpanWrapper {
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+
+    #footerNavigationSpanWrapper span{
+        font-size:3.75vw;
+    }
+    
+    #footerSocialIcons {
+        display:block;
+        width:100%;
+        padding-top:5vw;
+    }
+
+    #mainNavigationContent {
+        position: absolute;
+        width:100%;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .mainNavigationColumn {
+        position:relative;
+        width:100%;
+    }
+
+    .mainNavigationCentered {
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        width:100%;
+        text-align:center;
+    }
+
+    #codeLogo {
+        width:50%;
+    }
+
+    #singleNavItemWrapper {
+        text-align:center;
+    }
+
+    .singleNavItem {
+        
+        font-size:8vw;
+        margin:10px 0px;
+    }
+
+    #socialIconsWrapper {
+        margin-top:0px;
+    }
+}
